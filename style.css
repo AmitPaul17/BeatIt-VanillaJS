@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Rock Salt', cursive;
+	background-image: url(./cover1.jpg);
+}
+
+.app{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1{
+	color: red;
+	margin: 50px 0px 30px 0px;
+	text-align: center;
+	font-size: 40px;
+}
+
+header p{
+	color: yellowgreen;
+	font-size: 25px;
+}
+
+.pads{
+	
+	width: 100%;
+	display: flex;
+	padding-bottom: 30px;
+	padding-right: 20px;
+}
+
+.pads p{
+	text-align: center;
+	padding-top: 30px;
+	font-weight: 600;
+	color: black;
+}
+
+.pads > div{
+	height: 100px;
+	width: 100px;
+	flex: 1;
+	border-radius: 35px;
+	margin: 10px 5px 5px 20px;
+
+}
+
+.pad1{
+	cursor: pointer;
+	background: #DAF7A6;
+	transition: 1s;
+}
+.pad1:hover{
+
+	cursor: pointer;
+	background: #DAF7A6;
+	transform: scale(1.1);
+	box-shadow: 3px 3px 2px darkred;
+	z-index: 2;
+}
+
+.pad2{
+	cursor: pointer;
+	background: #FFC300;
+	transition: 1s;
+}
+.pad2:hover{
+
+	cursor: pointer;
+	background: #FFC300;
+	transform: scale(1.1);
+	box-shadow: 3px 3px 2px darkred;
+	z-index: 2;
+}
+
+.pad3{
+	cursor: pointer;
+	background: #FF5733;
+	transition: 1s;
+}
+.pad3:hover{
+
+	cursor: pointer;
+	background: #FF5733;
+	transform: scale(1.1);
+	box-shadow: 3px 3px 2px darkred;
+	z-index: 2;
+}
+
+.pad4{
+	cursor: pointer;
+	background: #C70039;
+	transition: 1s;
+}
+.pad4:hover{
+
+	cursor: pointer;
+	background: #C70039;
+	transform: scale(1.1);
+	box-shadow: 3px 3px 2px darkred;
+	z-index: 2;
+}
+
+.pad5{
+	cursor: pointer;
+	background: #900C3F;
+	transition: 1s;
+}
+.pad5:hover{
+
+	cursor: pointer;
+	background: #900C3F;
+	transform: scale(1.1);
+	box-shadow: 3px 3px 2px darkred;
+	z-index: 2;
+}
+
+.pad6{
+	cursor: pointer;
+	background: #581845;
+	transition: 1s;
+}
+.pad6:hover{
+
+	cursor: pointer;
+	background: #581845;
+	transform: scale(1.1);
+	box-shadow: 3px 3px 2px darkred;
+	z-index: 2;
+}
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
